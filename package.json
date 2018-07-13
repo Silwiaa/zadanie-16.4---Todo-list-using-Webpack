@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-webp-d": "webpack --mode development",
+    "start-webp-d": "webpack-dev-server --hot --env development",
     "start-webp-p": "webpack --mode production",
+    "webpack-server": "npm install --save-dev webpack-dev-server",
     "start-node": "node src/app.js",
     "start": "http-server",
+    "react-hot-loader": "npm install --save-dev react-hot-loader",
     "instal-babel": "npm install --save-dev babel-cli babel-preset-latest",
     "babel-compile": "babel script.js --watch --out-file script-compiled.js",
     "loader-babel": "npm install --save-dev babel-loader babel-core",
@@ -66,10 +68,12 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
     "rimraf": "^2.6.2",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.0",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
     "uuid": "^3.3.2"
